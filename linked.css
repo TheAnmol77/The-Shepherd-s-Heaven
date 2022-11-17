@@ -1,0 +1,90 @@
+body{
+    overflow: hidden;
+}
+#bgimg{
+    position: fixed;
+    height: 100%;
+    width: 70%;
+    background-image: url("https://wallpaperaccess.com/full/1091589.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+    z-index: -10;
+    /* position: absolute; */
+    display: inline-block;
+  }
+.img{
+    height: 800px;
+    width: 70%;
+    margin: 0 0 0 -400px;
+    display: inline-block;
+}
+.img img{
+    height: 800px;
+}
+    /* ////////////////////// Rating ////////////////////// */
+.rating {
+  display: flex;
+  flex-flow: row-reverse;
+  float: left;
+}
+.rating > input{
+  display:none;
+}
+.rating > label {
+  position: relative;
+  width: 20;
+  font-size: 80px;
+  -webkit-text-stroke:1px black;
+  cursor: pointer;
+}
+.rating > label::before{
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+.rating > label:hover:before,.rating > label:hover ~ label:before {
+  color: yellow;
+  opacity: 1;
+}
+.rating > input:checked ~ label:before{
+  color: yellow;
+  opacity: 1;
+}
+.rating:hover > input:checked ~ label:before{
+  opacity: 0.4;
+}
+           /* //////////////////// Bookmark //////////////////////// */
+.bookmark{
+  margin-left: 100px;
+  margin-top: 25px;
+}
+.bookmark > input{
+  display:none;
+}
+.bookmark > label {
+  position: relative;
+  width: 20;
+  font-size: 80px;
+  color: red;
+  cursor: pointer;
+}
+.bookmark > label::before{
+  content: "bookmark_border";
+  position: absolute;
+  opacity: 1;
+}
+.bookmark > label:hover:before,.rating > label:hover ~ label:before {
+  opacity: 0.8;
+}
+.bookmark  > input:checked ~ label:before{
+  content: "bookmark";
+  opacity: 1;
+}
+.flex{
+  display: flex;
+  margin: -600px 0 0 1000px;
+}
+.material_icon{
+  font-family: "Material Icons";
+}

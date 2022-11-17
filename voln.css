@@ -1,0 +1,200 @@
+body{
+    font-family: 'Lora', serif;
+    background-color: #fff5efff;
+  }
+  /* //////////////////////////// Navigation Bar //////////////////////////////////// */
+  nav ul {
+      background-color: #f3f2f0ff;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 101%;
+      z-index: 1000;
+      margin: 0 0 0 -10px;
+    }
+    
+    nav li {
+      float: right;
+      font-size: 20px;
+    }
+    
+    nav li a {
+      display: block;
+      color:#1e7788ff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    nav li:not(:first-child) a:hover {
+      text-decoration: underline;
+      background-color: #111;
+      color: #f3f2f0ff;
+    }
+  /* //////////////////////// Background Image ////////////////////////////////   */
+  .content{
+      width: 100%;
+      height: 90vh;
+      overflow: hidden;
+  }
+  .mainimg{
+      width: 120%;
+      height: 100%;
+      background-image: url(https://thumbs.dreamstime.com/b/family-people-clean-house-cartoon-characters-cleaning-room-working-household-together-vector-illustration-woman-man-199937337.jpg/);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      
+  }
+  .intro{
+    text-align: center; 
+    
+  }
+  .context{
+    text-align: center;
+    padding: 0 80px 0 80px ;
+    font-size: 19px;
+  }
+  .heading{
+      text-align: center;
+      font-size: 70px;
+  }
+  #cards{
+      display: flex;
+      /* background-color: rgb(185, 39, 39); */
+      /* height: 1300px; */
+      /* width: 10vw; */
+      flex-wrap: wrap;
+      /* flex-direction: column; */
+      padding:100px 50px;
+  }
+  .card{
+    margin: 40px 0 40px 0;
+    width: 1280px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 80px 80px;
+    /* text-align: center; */
+    font-size: 17px;
+    padding: 10px 5px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .details{
+      flex-wrap: wrap;
+      width: 800px;
+      height: 300px;
+      /* background-color: #111; */
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+  }
+  .card .image{
+    width: 440px;
+  }
+  .card img{
+    border-radius: 80px 80px;
+  }
+  .card:hover{
+    transform: scale(0.95);
+    transition: 0.3s;
+  }
+  .name{
+      width: 800px;
+      /* background-color: #111; */
+      font-size: 40px;
+  }
+  .contact{
+      /* margin: -10px; */
+      margin-top: 10px;
+  }
+  .margin{
+    margin:0 -1000px 0 0;
+  }
+  .right .details{
+    text-align: right;
+  }
+  .form{
+    text-align: center;
+  }
+  .form button{
+    height: 100px;
+    margin:0 0 40px 100px;
+    font-family: 'Lora', serif;
+    width: 600px;
+    font-size: 40px;
+    border: transparent;
+    background-color: white;
+  }
+  button:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: 0.5s;
+  }
+  
+  table{
+    font-size: 19px;
+  }
+  th{
+    font-size:24px;
+  }
+ 
+ #heading {
+    font-size:34;
+  }
+  fieldset{
+    width:50%;
+    display: inline-block;
+    
+  }
+  legend{
+    text-align:center;
+    font-size:24px;
+
+  }
+  #left {
+    text-align:left;
+  }
+  #right{
+    text-align: right;
+  }
+  #formt td{
+    padding-top:20px;
+    padding-right:100px;
+
+  }
+  #form-container{
+    text-align:center;
+  }
+ 
+  td{
+    text-align:center;
+  }
+ #addresst{
+  width:100%;
+ }
+ input, select{
+   width:100%;
+   font-family: 'Lora', serif;
+   font-size:17px;
+ }
+
+ input[type="submit"]{
+   width:40%;
+ }
+ select{
+   width:100%;
+   height:20px;
+ }
+ textarea{
+   width:100%;
+ }
+ hr{
+   padding:0px;
+   margin:0px;
+   color:black;
+ }

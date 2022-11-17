@@ -1,0 +1,200 @@
+@keyframes move {
+  from {left: -1500px;}
+  to {left: 200px;}
+}
+@keyframes shutter {
+  from {bottom: 100;visibility: visible;}
+  to {bottom: 205%;visibility: visible;}
+}
+@keyframes close {
+  from {bottom: 202%;visibility: visible;}
+  to {bottom: 100%;visibility: visible;}
+}
+body{
+  font-family: 'Lora', serif;
+}
+/* //////////////////////////// Navigation Bar //////////////////////////////////// */
+nav ul {
+  background-color: #f3f2f0ff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 101%;
+  z-index: 1000;
+  margin: 0 0 0 -10px;
+}
+
+nav li {
+  float: right;
+  font-size: 20px;
+}
+
+nav li a {
+  display: block;
+  color:#1e7788ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li:not(:first-child) a:hover {
+  text-decoration: underline;
+  background-color: #111;
+  color: #f3f2f0ff;
+}
+
+/* /////////////////////////// Styling //////////////////////////// */
+body{
+  padding: 0;
+}
+.flex{
+  display: flex;
+  flex-flow:row-reverse;
+  flex-wrap: wrap-reverse;
+}
+/* /////////////////////// Background ////////////////////////////// */
+#bg img{
+  pointer-events: none;
+  position: fixed;
+  height: 120%;
+  width: 110%;
+  margin:0 0 0 -12px;
+  bottom: 0;
+  z-index:-1;
+}
+/* /////////////////////// Ambulance //////////////////////// */
+#ambulance{
+  position: absolute;
+  margin: 100px 0 0 910px;
+  bottom: 0;
+}
+/* ///////////////////////// Hospital ////////////////////////////// */
+.hospital{
+  margin: -300px 0 0 -1000px;
+  height: 500px;
+  position: absolute;
+  width: 1000px;
+  /* border: 10px solid black; */
+}
+.border{
+  border: 10px solid black;
+  height: 170px;
+  overflow: hidden;
+}
+.big{
+  width:350px;
+}
+.mid{
+  width: 300px;
+}
+#ambulance{
+  animation: move 4s forwards;
+}
+.hover{
+  bottom: 102%;
+  width: 101%;
+  height: 100%;
+  /* visibility: visible; */
+  color: rgba(255, 255, 255, 0.801);
+  text-align: center;
+  font-size: 30px;
+  word-wrap: break-word;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(https://cdn.discordapp.com/attachments/816210078821515297/842432196207706152/unknown.png); */
+}
+.hover p{
+  visibility: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* /////////////////////// Every image ///////////////////////////////////// */
+.voln{
+  background-image: url(https://thumbs.dreamstime.com/b/family-people-clean-house-cartoon-characters-cleaning-room-working-household-together-vector-illustration-woman-man-199937337.jpg);
+  background-size: cover;
+}
+.asst{
+ background-image: url(https://img.freepik.com/free-vector/senior-woman-watching-online-video-consultation-with-female-doctor-tv-screen-healthcare-telemedicine-medical-advice-concept-living-room-interior-horizontal_48369-32532.jpg?size=626&ext=jpg);
+ background-size: cover;
+}
+.nh{
+  background-image: url(https://image.freepik.com/free-vector/male-patient-lying-bed-modern-intensive-therapy-room-vector-flat-illustration-sick-man-with-dropper-hospital-interior-medical-clinic-furniture-devices-guy-ward-during-therapy_198278-1725.jpg);
+  background-size: cover;
+ }
+.med{
+  background-image: url(https://image.freepik.com/free-vector/drugstore-pharmacy-with-pharmacist-customer-with-prescription-buys-medicine-medical-shop-pharmaceutical-retail-vector-concept_176411-682.jpg);
+  background-position: -60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+.ot{
+  background-image: url(https://media.istockphoto.com/vectors/medical-hospital-surgery-operation-room-vector-id528563772?b=1&k=6&m=528563772&s=612x612&w=0&h=swk9lWxYVes3qM6woFn4L0vn-W2dcmzAd9XBE9s8mgA=);
+  background-size: cover;
+ }
+.labs{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/000/486/161/non_2x/vector-medical-concept-scientists-man-research-in-a-laboratory-lab.jpg);
+  background-size: cover;
+ }
+.opd{
+  background-image: url(https://image.freepik.com/free-vector/patients-clinic-waiting-room-character-flat-illustration-medicine-healthcare_213110-206.jpg);
+  background-size: cover;
+ }
+.basic{
+  background-image: url(https://thumbs.dreamstime.com/b/patients-hospital-reception-desk-registering-paying-desk-sitting-waiting-doctor-healthcare-concept-194252198.jpg);
+  background-size: cover;
+}
+/* ///////////////////////////////////////////////////////////////////// */
+.shutter{
+  background-image: url(https://img.freepik.com/free-photo/shutter-garage-wall-background_1150-12920.jpg?size=626&ext=jpg);
+  height: 107%;
+  width: 105%;
+  position: relative;
+}
+.shutter{
+  animation: close 0.1s linear forwards,shutter 4s 4s forwards;
+}
+.name{
+  height: 80px;
+  width: 710px;
+  text-align: center;
+  border: 15px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  vertical-align: top;
+}
+.flux {
+  margin-top: -40px;
+  font-family: beon;
+  color: #fb4242;
+  font-size: 6vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #ff2323;
+}
+.flux {
+  text-shadow: 0 0 1vw #fe2828, 0 0 3vw #fe2828, 0 0 10vw #fe2828, 0 0 10vw #fe2828, 0 0 .4vw #fe8b8b, 0 0 0 #801414;
+    color: #fe2828;
+}
+/* .big p, .small p, .mid p{
+  /* visibility: hidden; */
+  /* position:static; */
+/* } */ 
+.big:hover .hover, .small:hover .hover, .mid:hover .hover{
+  visibility: visible;
+  background-color:#00000049 ;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  transform: scale(1.09);
+  transition: 0.6s;
+  opacity: 1;
+}
+.big:hover p, .small:hover p, .mid:hover p{
+  visibility: visible;
+  transition: 0.2s;
+}
+.small{
+  width: 150px;
+  /* background-image: url(https://img.freepik.com/free-vector/receptionist-job-vector-illustration_74855-4564.jpg?size=626&ext=jpg); */
+}

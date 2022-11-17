@@ -1,0 +1,104 @@
+body{
+  font-family: 'Lora', serif;
+}
+/* //////////////////////////// Navigation Bar //////////////////////////////////// */
+nav ul {
+    background-color: #f3f2f0ff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 101%;
+    z-index: 1000;
+    margin: 0 0 0 -10px;
+  }
+  
+  nav li {
+    float: right;
+    font-size: 20px;
+  }
+  
+  nav li a {
+    display: block;
+    color:#1e7788ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li:not(:first-child) a:hover {
+    text-decoration: underline;
+    background-color: #111;
+    color: #f3f2f0ff;
+  }
+/* //////////////////////// Background Image ////////////////////////////////   */
+.content{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+.mainimg{
+    width: 120%;
+    height: 100%;
+    background-image: url(https://images-ext-2.discordapp.net/external/TEDztkC25rbuOsO2_PaCmnG7abUC9YOO88X3OcKNGeI/%3Fb%3D1%26k%3D6%26m%3D528563772%26s%3D612x612%26w%3D0%26h%3Dswk9lWxYVes3qM6woFn4L0vn-W2dcmzAd9XBE9s8mgA%3D/https/media.istockphoto.com/vectors/medical-hospital-surgery-operation-room-vector-id528563772?width=569&height=406);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.intro{
+  text-align: center; 
+}
+.context{
+  text-align: center;
+  padding: 0 80px 0 80px ;
+  font-size: 19px;
+}
+.heading{
+    text-align: center;
+    font-size: 70px;
+}
+#cards{
+    display: flex;
+    /* background-color: rgb(185, 39, 39); */
+    height: 1300px;
+    flex-wrap: wrap;
+    padding:100px 50px;
+}
+.card{
+  margin: 0px 40px 0 100px;
+  width: 300px;
+  height: 400px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 10%;
+  text-align: center;
+  font-size: 17px;
+  padding: 30px 10px 10px 10px;
+
+}
+.second{
+  margin: 0 0px 0 265px;
+}
+.card:hover{
+  transform: scale(0.95);
+  transition: 0.3s;
+}
+.form{
+  text-align: center;
+}
+.form button{
+  height: 100px;
+  margin:0 0 40px 100px;
+  font-family: 'Lora', serif;
+  width: 600px;
+  font-size: 40px;
+  border: transparent;
+  background-color: white;
+}
+button:hover{
+  
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transition: 0.5s;
+}

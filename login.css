@@ -1,0 +1,238 @@
+body{
+    margin: -10px;
+    /* background-color: aqua; */
+    overflow: hidden;
+    font-family: 'Lora', serif;
+}
+@keyframes grow{
+    from {transform: scale(0);visibility:visible;}
+    to {transform: scale(1);visibility:visible;}
+  }
+  @keyframes setx{
+    from {transform: translateX(100px);opacity: 0;visibility:visible;}
+    to {transform: translateX(0);opacity: 1;visibility:visible;}
+  }
+  @keyframes sety{
+    from {transform: translateY(100px);opacity: 0;visibility:visible;}
+    to {transform: translateY(0);opacity: 1;visibility:visible;}
+  }
+/* //////////////////// Navigation Bar /////////////////////// */
+/* //////////////////////////// Navigation Bar //////////////////////////////////// */
+nav ul {
+  background-color: #f3f2f0ff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 101%;
+  z-index: 1000;
+  margin: 0 0 0 -10px;
+}
+
+nav li {
+  float: right;
+  font-size: 20px;
+}
+
+nav li a {
+  display: block;
+  color:#1e7788ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li:not(:first-child) a:hover {
+  text-decoration: underline;
+  background-color: #111;
+  color: #f3f2f0ff;
+}
+
+/* Puzzle */
+/*Postioning all pieces togehter*/
+#puzzle img{
+    position: absolute;
+}
+#puzzle{
+    position: relative;
+    top: 150px;
+    left: 60px;
+}
+/* Postioning pieces according to their classes */
+.top{
+    top: 10px;
+}
+.bottom{
+    top: 312px;
+}
+.left{
+    left: 1px;
+}
+.right{
+    left: 302px;
+}
+.fourth{
+    top: 207px;
+    left: 197px;
+}
+.first{
+    left:0px ;
+}
+.first,.second,.third,.fourth{
+    visibility: hidden;
+}
+/* ////////////////////////// Background Image /////////////////////////////// */
+#bgimg{
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    background-image: url("https://wallpaperaccess.com/full/1091589.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.3;
+    z-index: -10;
+  }
+  /* /////////////////////////// Circles //////////////////////////////// */
+.inner{
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    border-radius: 50%;
+    background-color: #ffd5d6ff;
+    left: 500px;
+    bottom: 0px;
+    visibility: hidden;
+    animation: grow 2s forwards;
+    opacity: 0.8;
+}
+.middle{
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    border-radius: 50%;
+    background-color: #ffd5d6ff;
+    left: 400px;
+    bottom: -60px;
+    visibility: hidden;
+    opacity: 0.6;
+    animation: grow 2s 0.5s forwards;
+}
+.outer{
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    border-radius: 50%;
+    background-color: #ffd5d6ff;
+    left: 310px;
+    bottom: -110px;
+    visibility: hidden;
+    animation: grow 2s 1s forwards;
+    opacity: 0.4;
+}
+/* /////////////////////// Login Side ///////////////////////////////// */
+.logindiv{
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    width: 500px;
+    height: 530px;
+    border-radius: 5%;
+    z-index: 1;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Microsoft YaHei", serif;
+    padding-top: 30px;
+    visibility: hidden;
+    animation: grow 3s 4s forwards;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.8;
+    box-shadow:0px 0px 20px black;
+    animation: grow 3s 4s forwards;
+    visibility: hidden;
+}
+.login-form input{
+    font-size: 20px;
+}
+.login-form {
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 40px;
+    color: white;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 16px;
+    border-radius: 8px;
+    visibility: hidden;
+    animation: grow 3s 4s forwards;
+    /* text-align: center; */
+  }
+  .login-form h1 {
+    margin: 0 0 24px 0;
+  }
+  .login-form .format {
+    margin: 12px 0;
+  }
+  .login-form .btn {
+    margin: 18px 0 9px 60px;
+    padding: 8px 20px;
+    position: relative;
+    border-radius: 0;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    /* display: inline-block; */
+    font-size: 20px;
+  }
+.login-form input {
+    color: white;
+    width: 100%;
+  }
+.login-form input {
+    font: inherit;
+    outline: none;
+  }
+  
+  .format {
+    position: relative;
+    border: 30px transparent;
+    border-bottom: 1px solid white;
+    width: 100%;
+  }
+  .format:focus-within::before {
+    transform: scaleX(1);
+  }
+  .format .inmat {
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+  }
+  .format .inmat:focus ~ label, .format .inmat:not(:placeholder-shown)~label {
+    transform: translateY(-110%) scale(0.8);
+  }
+  .format label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    transition: 0.3s;
+  }
+  .first{
+      animation: grow 1s 2s forwards;
+  }
+  .second{
+    animation:setx 1s 3s forwards ;
+  }
+  .third{   
+    animation:sety 1s 3.5s forwards ;
+  }
+  .fourth{
+      animation: grow 1s 4s forwards;
+  }
+
+

@@ -1,0 +1,179 @@
+body{
+  font-family: 'Lora', serif;
+}
+/* //////////////////////////// Navigation Bar //////////////////////////////////// */
+nav ul {
+  background-color: #f3f2f0ff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 101%;
+  z-index: 1000;
+  margin: 0 0 0 -10px;
+}
+
+nav li {
+  float: right;
+  font-size: 20px;
+}
+
+nav li a {
+  display: block;
+  color:#1e7788ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li:not(:first-child) a:hover {
+  text-decoration: underline;
+  background-color: #111;
+  color: #f3f2f0ff;
+}
+
+/* //////////////////////////////// Body //////////////////////////// */
+body{
+  padding: 0;
+  overflow: hidden;
+}
+#bgimg{
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  background-image: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFibGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"); 
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+  z-index: -10;
+}
+/* ///////////////////////////////// Animations /////////////////////////////////////////// */
+@keyframes entrance{
+  from {transform: scale(0);visibility:visible;}
+  to {transform: scale(1);visibility:visible;}
+}
+@keyframes entrance2{
+  from {transform: translateX(-10px);opacity: 0;;visibility:visible;overflow: hidden;}
+  to {transform: translateX(0);opacity: 1;visibility:visible;overflow: hidden;}
+}
+@keyframes entrance3{
+  from {transform: translateX(-10px);opacity: 0;;visibility:visible;overflow: hidden;}
+  to {transform: translateX(0);opacity: 1;visibility:visible;overflow: hidden;}
+}
+/* ////////////////////////////// Content /////////////////////////////////// */
+.content{
+  position: absolute;
+  margin-top: 45px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 93%;
+  width: 50%;
+  background-image: url(https://media.discordapp.net/attachments/816974950875004992/842951837471866890/chess.png?width=706&height=703);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-wrap: wrap;
+  animation: entrance3 3s;
+}
+.content a{
+  color: white;
+  text-decoration: none;
+}
+.box{
+  /* border: 1.25px solid black; */
+  width: 90.5px;
+  height: 90px;
+}
+.bigpic{
+  margin-top: 60px;
+  margin-left: 780px;
+  width: 540px;
+  height: 635px;
+  border-radius: 15%;
+  position: absolute;
+  overflow: hidden;
+  /* background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  box-shadow:0px 0px 20px black; */
+  visibility: hidden;
+}
+.original{
+  visibility: hidden;
+  animation: entrance 2s 4s forwards;
+  margin-top: 60px;
+  margin-left: 875px;
+  width: 540px;
+  height: 635px;
+  border-radius: 15%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  box-shadow:0px 0px 40px rgb(0, 0, 0);
+}
+.bigpic img{
+  border-radius: 25%;
+  box-shadow:0px 0px 9px rgb(20, 19, 19);
+  margin: 34px 0 0 24px;
+  overflow: hidden;
+}
+.original p{
+  font-family:beon;
+  font-size: 80px;
+  text-align: center;
+}
+
+.links:hover .bigpic{
+  visibility: visible;
+  animation: entrance2 1s;
+}
+.links:hover >* .abc{
+  visibility: hidden;
+}
+
+.bigpic .name{
+  width: 230px;
+  word-wrap: break-word;
+  font-size: 62px;
+  float: right;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  margin:70px 30px 0 0;
+  color: black;
+}
+.details{
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  margin:40px 30px 30px 30px;
+  font-size: 25px;
+  color: black;
+}
+.ludo{
+  margin:70px 30px 0 790px;
+}
+.sal{
+  margin:-20px 30px 0 500px;
+}
+.ttt{
+  margin:-20px 30px 0 240px;
+}
+.rev{
+  margin:-200px 30px 0 600px;
+}
+.mgg{
+  margin:-580px 30px 0 700px;
+}
+.chess{
+  margin:-300px 30px 0 880px;
+}
+.fall{
+  margin:-400px 30px 0 520px;
+}
+.io{
+  margin:-470px 30px 0 230px;
+}
+.io img{
+  width: 200px;
+}
+.abc:hover ~.original{
+  visibility: hidden;
+}

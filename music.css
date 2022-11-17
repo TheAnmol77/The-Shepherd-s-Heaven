@@ -1,0 +1,104 @@
+body{
+  font-family: 'Lora', serif;
+  overflow-y: hidden;
+}
+/* //////////////////////////// Navigation Bar //////////////////////////////////// */
+nav ul {
+  background-color: rgb(243, 242, 240);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 101%;
+  z-index: 1000;
+  margin: 0 0 0 -10px;
+}
+
+nav li {
+  float: right;
+  font-size: 20px;
+}
+
+nav li a {
+  display: block;
+  color:#1e7788ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li:not(:first-child) a:hover {
+  text-decoration: underline;
+  /* background-color: #111; */
+  color: rgb(243, 242, 240);
+}
+.bg{
+  position: absolute;
+  margin:-50px 0 0 -30px;
+  background-image: url(https://wallpaperaccess.com/full/1616109.jpg);
+  /* background-color: rgb(44, 39, 39); */
+  position: fixed;
+  z-index: 100;
+}
+.bg img{
+  height: 150%;
+  width: 100%;
+  opacity: 0.8;
+}
+.player{
+  z-index: -1;
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.one{
+  background-image: url(https://i2.wp.com/wam.fm/wp-content/uploads/2018/09/studio-music-bg.png?fit=3000%2C2000&ssl=1);
+  background-size: cover;
+  margin: -800px 0 0 420px;
+}
+.two{
+  background-image: url(https://cdn.wallpapersafari.com/77/13/MBHCwG.jpg);
+  background-size: cover;
+  margin: -800px 0 0 810px;
+}
+.three{
+  background-image: url(https://images.ctfassets.net/hrltx12pl8hq/61vsZVu7eufNYzpLv7YVz6/2ae275d8a9a3a61f6e2a69c4a9e77a32/LP_Music_subs_hero_BG_image_2560x1100.jpg);
+  background-size: cover;
+  margin: -550px 0 0 250px;
+}
+.four{
+  background-image: url(https://img.freepik.com/free-vector/seamless-background-with-different-cartoon-musical-insrtuments-music-art-colors-are-separate-groups_300579-157.jpg?size=626&ext=jpg);
+  background-size: cover;
+  margin: -550px 0 0 620px;
+} 
+.five{
+  background-image: url(https://euphoria-entertainments.com/wp-content/uploads/2019/01/music-bg.jpg);
+  background-size: cover;
+  margin: -550px 0 0 980px;
+}
+.detail{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #5c6bc0ff;
+  opacity: 0.9;
+  color: aliceblue;
+  padding: 1px;
+  z-index: -1;
+}
+.circle{
+  z-index: 3;
+  color: aliceblue;
+  margin: 90px 230px;
+  font-size: 60px;
+  font-family: "Material Icons";
+}
+.circle:hover{
+  color: black;
+  transition: 0.2s;
+}
